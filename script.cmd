@@ -12,3 +12,4 @@ if not defined FLATBUILD_NAME (
 
 :: 如果 FLATBUILD_NAME 已经有值，输出并退出
 echo FLATBUILD_NAME is %FLATBUILD_NAME%
+exit /b 0
