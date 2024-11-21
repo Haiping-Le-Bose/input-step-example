@@ -3,5 +3,6 @@ steps:
     fields:
       - text: "Flatbuild Name"
         key: "flatbuild_name"
+  - wait
   - label: "Run script"
     command: script.cmd
