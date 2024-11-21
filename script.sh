@@ -1,12 +1,12 @@
 #!/bin/bash
 
-NAME=""
+FLATBUILD_NAME=""
 
-until [ ${#NAME} -gt 0 ]
+until [ ${#FLATBUILD_NAME} -gt 0 ]
 do
   echo "Script is checking for name"
-  NAME=$(buildkite-agent meta-data get name)
-  echo "Script run by $NAME"
+  FLATBUILD_NAME=$(buildkite-agent meta-data get flatbuild_name)
+  echo "FLATBUILD_NAME is $NAME"
   sleep 5
 done
 
