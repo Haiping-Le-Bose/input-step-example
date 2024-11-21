@@ -1,7 +1,7 @@
 steps:
-  - input: "Who is running this script?"
+  - input: "Which flatbuild do you need?  Please provide the name, e.g., 8295_FlatBuild_49-20241115.tgz"
     fields:
-      - text: "Your name"
-        key: "name"
+      - text: "Flatbuild Name"
+        key: "flatbuild_name"
   - label: "Run script"
     command: script.sh
