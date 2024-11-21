@@ -1,7 +1,7 @@
 @echo off
 :loop
-:: 检查 FLATBUILD_NAME 是否为空
-for /f "delims=" %%i in ('buildkite-agent meta-data get flatbuild_name 2^>nul') do set FLATBUILD_NAME=%%i
+:: 使用 Buildkite Agent 获取 flatbuild_name
+for /f "delims=" %%i in ('buildkite-agent meta-data get flatbuild_name') do set FLATBUILD_NAME=%%i
 
 :: 如果 FLATBUILD_NAME 为空，继续循环
 if not defined FLATBUILD_NAME (
