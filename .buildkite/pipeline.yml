@@ -4,4 +4,4 @@ steps:
       - text: "Flatbuild Name"
         key: "flatbuild_name"
   - label: "Run script"
-    command: script.sh
+    command: script.cmd
